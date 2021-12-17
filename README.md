@@ -5,7 +5,7 @@ This is my Mecanum Wheel Robot code & live video
 - Using serial communication between the Jetson and the Arduino to see how far off center the person is, and then serial print it to the Arduino
 which changes the motor speed and then changes the left and right speeds accordingly.
 
-- On the Jetson Nano, OpenCV is running on python and is using the Coco 2018 dataset to detect any people, and it takes the outer edges and 
+- On the Jetson Nano, OpenCV is running on python and is using the Coco 2017 dataset to detect any people, and it takes the outer edges and 
 averages them to find the center point.
 
 - On the Arduino, the Serial Monitor is being listened to and the motors are being driven, and the x from center is subtracted from one side 
