@@ -38,7 +38,7 @@ while True:
   rows = img.shape[0]
   cols = img.shape[1]
   xlength = int(cols)
-  cvNet.setInput(cv.dnn.blobFromImage(img, size=(300,300), swapRB=True, crop=False))
+  cvNet.setInput(cv.dnn.blobFromImage(img, size=(200,200), swapRB=True, crop=False))
   cvOut = cvNet.forward()
   for detection in cvOut[0,0,:,:]:
     score = float(detection[2])
